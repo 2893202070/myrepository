@@ -1,2 +1,21 @@
+spring:
+  profiles:
+    active:
+    - dev
+    
+---
+
 server:
-  port: 1299
+  port: 3355
+spring:
+  application:
+    name: SERVICE-DEV
+  profiles: dev
+---
+
+server:
+  port: 3356
+spring:
+  application:
+    name: SERVICE-TEST
+  profiles: test
